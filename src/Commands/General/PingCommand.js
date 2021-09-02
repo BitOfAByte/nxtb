@@ -1,9 +1,11 @@
+
 const Command = require('../../structures/Command');
 
 module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
+			name: "ping",
 			aliases: ['pong'],
 			description: 'This provides the ping of the bot',
 			category: 'General'

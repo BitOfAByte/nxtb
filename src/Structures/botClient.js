@@ -6,7 +6,7 @@ module.exports = class botClient extends Client {
 
 	constructor(options = {}) {
 		super({
-			intents: [Intents.FLAGS.GUILDS]
+			intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
 		});
         
 		this.validate(options);
